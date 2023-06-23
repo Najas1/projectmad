@@ -4,9 +4,9 @@
     android:title="Home"
     android:icon="@drawable/ic_home"/>
 
-    <item android:id="@+id/cate"
-        android:title="Categories"
-        android:icon="@drawable/ic_menu"/>
+<!--    <item android:id="@+id/cate"-->
+<!--        android:title="Categories"-->
+<!--        android:icon="@drawable/ic_menu"/>-->
 
     <item android:id="@+id/blog"
         android:title="Blog"

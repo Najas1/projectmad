@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView=findViewById(R.id.bottomNav);
 
         fragmentArrayList.add(new HomeFragment());
-        fragmentArrayList.add(new CategoriesFragment());
+//        fragmentArrayList.add(new CategoriesFragment());
         fragmentArrayList.add(new BlogFragment());
         fragmentArrayList.add(new ProfileFragment());
 
@@ -55,13 +55,13 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         bottomNavigationView.setSelectedItemId(R.id.home);
                         break;
+//                    case 1:
+//                        bottomNavigationView.setSelectedItemId(R.id.cate);
+//                        break;
                     case 1:
-                        bottomNavigationView.setSelectedItemId(R.id.cate);
-                        break;
-                    case 2:
                         bottomNavigationView.setSelectedItemId(R.id.blog);
                         break;
-                    case 3:
+                    case 2:
                         bottomNavigationView.setSelectedItemId(R.id.profile);
                         break;
                 }
@@ -78,14 +78,14 @@ public class MainActivity extends AppCompatActivity {
                 if (id==R.id.home) {
                     viewPager2.setCurrentItem(0);
                 }
-                else if (id==R.id.cate) {
+//                else if (id==R.id.cate) {
+//                    viewPager2.setCurrentItem(1);
+//                }
+                else if (id==R.id.blog) {
                     viewPager2.setCurrentItem(1);
                 }
-                else if (id==R.id.blog) {
-                    viewPager2.setCurrentItem(2);
-                }
                 else if (id==R.id.profile)
-                    viewPager2.setCurrentItem(3);
+                    viewPager2.setCurrentItem(2);
 
                 return true;
             }
