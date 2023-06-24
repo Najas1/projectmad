@@ -1,0 +1,1748 @@
+Index: app/src/main/res/layout/activity_cate_ayurveda.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".cate_ayurveda\">\n    <ScrollView\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\">\n        <LinearLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\"\n            android:orientation=\"vertical\">\n            <TextView\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:layout_margin=\"20dp\"\n                android:text=\"Ayurveda\"\n                android:textStyle=\"bold\"\n                android:padding=\"10sp\"\n                android:textSize=\"28sp\"/>\n            <ImageView\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:padding=\"10dp\"\n                android:layout_margin=\"10sp\"\n                android:src=\"@drawable/img3\"/>\n\n\n\n        </LinearLayout>\n    </ScrollView>\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_cate_ayurveda.xml b/app/src/main/res/layout/activity_cate_ayurveda.xml
+--- a/app/src/main/res/layout/activity_cate_ayurveda.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/layout/activity_cate_ayurveda.xml	(date 1687243687967)
+@@ -1,13 +1,11 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".cate_ayurveda">
+-    <ScrollView
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent">
++
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+@@ -22,13 +20,60 @@
+                 android:textSize="28sp"/>
+             <ImageView
+                 android:layout_width="match_parent"
+-                android:layout_height="wrap_content"
++                android:layout_height="300dp"
+                 android:padding="10dp"
+                 android:layout_margin="10sp"
+-                android:src="@drawable/img3"/>
++                android:src="@drawable/home_ayur"/>
+ 
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:orientation="vertical">
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:padding="5dp"
++                    android:justificationMode="inter_word"
++                    android:text="@string/introduction_of_auyerveda"
++                    />
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:padding="5dp"
++                    android:justificationMode="inter_word"
++                    android:text="@string/origin_of_auyerveda"/>
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:padding="5dp"
++                    android:justificationMode="inter_word"
++                    android:text="@string/uses_and_advantages_of_auyerveda"/>
+ 
++<!--                <TextView-->
++<!--                    android:layout_width="match_parent"-->
++<!--                    android:layout_height="wrap_content"-->
++<!--                    android:padding="5dp"-->
++<!--                    android:justificationMode="inter_word"-->
++<!--                    android:text="@string/names_in_the_list_auyer"/>-->
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:padding="5dp"
++                    android:justificationMode="inter_word"
++                    android:text="@string/practioner_ayur"/>
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:padding="5dp"
++                    android:justificationMode="inter_word"
++                    android:text="@string/names_of_the_practioner_auyer"/>
+ 
++            </LinearLayout>
+         </LinearLayout>
++<!--     <androidx.appcompat.widget.LinearLayoutCompat-->
++<!--         android:layout_width="match_parent"-->
++<!--         android:layout_height="wrap_content" >-->
++<!--         -->
++<!--     </androidx.appcompat.widget.LinearLayoutCompat>  -->
++
+     </ScrollView>
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/menu/bottom_nav.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<menu xmlns:android=\"http://schemas.android.com/apk/res/android\">\n<item android:id=\"@+id/home\"\n    android:title=\"Home\"\n    android:icon=\"@drawable/ic_home\"/>\n\n    <item android:id=\"@+id/cate\"\n        android:title=\"Categories\"\n        android:icon=\"@drawable/ic_menu\"/>\n\n    <item android:id=\"@+id/blog\"\n        android:title=\"Blog\"\n        android:icon=\"@drawable/assignment_24\"/>\n\n    <item android:id=\"@+id/profile\"\n        android:title=\"Profile\"\n        android:icon=\"@drawable/ic_person\"/>\n</menu>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/menu/bottom_nav.xml b/app/src/main/res/menu/bottom_nav.xml
+--- a/app/src/main/res/menu/bottom_nav.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/menu/bottom_nav.xml	(date 1687194625034)
+@@ -4,9 +4,9 @@
+     android:title="Home"
+     android:icon="@drawable/ic_home"/>
+ 
+-    <item android:id="@+id/cate"
+-        android:title="Categories"
+-        android:icon="@drawable/ic_menu"/>
++<!--    <item android:id="@+id/cate"-->
++<!--        android:title="Categories"-->
++<!--        android:icon="@drawable/ic_menu"/>-->
+ 
+     <item android:id="@+id/blog"
+         android:title="Blog"
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".Fragment.HomeFragment\">\n\n    <!-- TODO: Update blank fragment layout -->\n\n\n    <RelativeLayout\n        android:id=\"@+id/TOP_START\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"120dp\"\n        android:background=\"#25E1E1E1\"\n        tools:ignore=\"UselessParent\">\n\n\n        <TextView\n            android:layout_width=\"200dp\"\n            android:layout_height=\"32dp\"\n            android:layout_alignParentStart=\"true\"\n            android:layout_marginStart=\"10dp\"\n            android:layout_marginTop=\"20dp\"\n            android:text=\"Bangalore\"\n            android:textStyle=\"bold\" />\n\n\n\n        <androidx.appcompat.widget.SearchView\n            android:id=\"@+id/searchbar\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"48dp\"\n            android:layout_alignParentEnd=\"true\"\n            android:layout_alignParentBottom=\"true\"\n            android:layout_marginStart=\"60dp\"\n            android:layout_marginEnd=\"10dp\"\n            android:layout_marginBottom=\"10dp\"\n            android:background=\"@drawable/login_bg\"\n            android:clickable=\"true\"\n            android:focusable=\"true\"\n            app:defaultQueryHint=\"Search\" />\n\n        <ImageView\n            android:id=\"@+id/imageView2\"\n            android:layout_width=\"48dp\"\n            android:layout_height=\"48dp\"\n            android:layout_alignParentBottom=\"true\"\n            android:layout_marginBottom=\"10dp\"\n            android:layout_marginStart=\"10dp\"\n            android:background=\"@drawable/login_bg\"\n            android:src=\"@drawable/madcoach_logo\"\n            android:contentDescription=\"TODO\" />\n    </RelativeLayout>\n\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        android:layout_marginTop=\"125dp\"\n        android:orientation=\"vertical\"\n        android:padding=\"10dp\">\n\n        <LinearLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"120dp\"\n            android:background=\"@drawable/blogbg_1\"\n            android:elevation=\"4dp\">\n\n            <FrameLayout\n                android:layout_width=\"120dp\"\n                android:layout_height=\"match_parent\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_4\">\n\n                <ImageView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:src=\"@drawable/otpi1\" />\n            </FrameLayout>\n\n            <FrameLayout\n                android:layout_width=\"120dp\"\n                android:layout_height=\"match_parent\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_4\">\n\n                <ImageView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:src=\"@drawable/ill1\" />\n            </FrameLayout>\n        </LinearLayout>\n\n        <FrameLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"150dp\"\n            android:layout_marginTop=\"10dp\"\n            android:background=\"@drawable/blogbg_1\">\n\n            <FrameLayout\n                android:layout_width=\"120dp\"\n                android:layout_height=\"match_parent\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_4\">\n\n                <ImageView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:src=\"@drawable/otpi1\" />\n            </FrameLayout>\n        </FrameLayout>\n\n\n    </LinearLayout>\n\n</FrameLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_home.xml b/app/src/main/res/layout/fragment_home.xml
+--- a/app/src/main/res/layout/fragment_home.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/layout/fragment_home.xml	(date 1687195185680)
+@@ -1,117 +1,529 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".Fragment.HomeFragment">
++    tools:context=".Fragment.CategoriesFragment"
++    android:background="@color/white">
+ 
+     <!-- TODO: Update blank fragment layout -->
+-
+-
+     <RelativeLayout
+-        android:id="@+id/TOP_START"
+-        android:layout_width="match_parent"
+-        android:layout_height="120dp"
+-        android:background="#25E1E1E1"
+-        tools:ignore="UselessParent">
+-
+-
+-        <TextView
+-            android:layout_width="200dp"
+-            android:layout_height="32dp"
+-            android:layout_alignParentStart="true"
+-            android:layout_marginStart="10dp"
+-            android:layout_marginTop="20dp"
+-            android:text="Bangalore"
+-            android:textStyle="bold" />
+-
+-
+-
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:background="@color/DeepSkyBlue">
+         <androidx.appcompat.widget.SearchView
+             android:id="@+id/searchbar"
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+-            android:layout_alignParentEnd="true"
+-            android:layout_alignParentBottom="true"
+-            android:layout_marginStart="60dp"
++            android:layout_marginTop="20dp"
++            android:layout_marginStart="10dp"
+             android:layout_marginEnd="10dp"
+             android:layout_marginBottom="10dp"
+             android:background="@drawable/login_bg"
+             android:clickable="true"
+-            android:focusable="true"
+-            app:defaultQueryHint="Search" />
+-
+-        <ImageView
+-            android:id="@+id/imageView2"
+-            android:layout_width="48dp"
+-            android:layout_height="48dp"
+-            android:layout_alignParentBottom="true"
+-            android:layout_marginBottom="10dp"
+-            android:layout_marginStart="10dp"
+-            android:background="@drawable/login_bg"
+-            android:src="@drawable/madcoach_logo"
+-            android:contentDescription="TODO" />
++            android:focusable="true" />
+     </RelativeLayout>
+ 
+-    <LinearLayout
++    <HorizontalScrollView
++        android:layout_marginHorizontal="10dp"
+         android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_alignParentBottom="true"
++        android:paddingVertical="4dp"
++        android:layout_marginTop="80dp"
++        android:scrollbars="none">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="28dp"
++            android:orientation="horizontal">
++
++
++
++            <TextView
++                android:id="@+id/view12"
++                android:layout_width="wrap_content"
++                android:layout_height="match_parent"
++                android:layout_marginHorizontal="5dp"
++                android:layout_weight="1"
++                android:text="All"
++                android:gravity="center"
++                android:textStyle="bold"
++                android:textColor="@color/black"
++                android:textSize="16sp"
++                android:paddingHorizontal="20dp"
++                android:background="@drawable/cardbg_1">
++            </TextView>
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="match_parent"
++                android:layout_marginHorizontal="5dp"
++                android:layout_weight="1"
++                android:text="Ayurveda"
++                android:gravity="center"
++                android:textStyle="bold"
++                android:textColor="@color/black"
++                android:textSize="16sp"
++                android:paddingHorizontal="20dp"
++                android:background="@drawable/cardbg_1">
++            </TextView>
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="match_parent"
++                android:layout_marginHorizontal="5dp"
++                android:layout_weight="1"
++                android:text="Meditation"
++                android:gravity="center"
++                android:textStyle="bold"
++                android:textColor="@color/black"
++                android:textSize="16sp"
++                android:paddingHorizontal="20dp"
++                android:background="@drawable/cardbg_4">
++            </TextView>
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="match_parent"
++                android:layout_marginHorizontal="5dp"
++                android:layout_weight="1"
++                android:text="Acupuncture"
++                android:gravity="center"
++                android:textStyle="bold"
++                android:textColor="@color/black"
++                android:textSize="16sp"
++                android:paddingHorizontal="20dp"
++                android:background="@drawable/cardbg_1">
++            </TextView>
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="match_parent"
++                android:layout_marginHorizontal="5dp"
++                android:layout_weight="1"
++                android:text="Hypnotherapy"
++                android:gravity="center"
++                android:textStyle="bold"
++                android:textColor="@color/black"
++                android:textSize="16sp"
++                android:paddingHorizontal="20dp"
++                android:background="@drawable/cardbg_1">
++            </TextView>
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="match_parent"
++                android:layout_marginHorizontal="5dp"
++                android:layout_weight="1"
++                android:text="Yoga"
++                android:gravity="center"
++                android:textStyle="bold"
++                android:textColor="@color/black"
++                android:textSize="16sp"
++                android:paddingHorizontal="20dp"
++                android:background="@drawable/cardbg_1">
++            </TextView><TextView
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent"
++            android:layout_marginHorizontal="5dp"
++            android:layout_weight="1"
++            android:text="Ricki"
++            android:gravity="center"
++            android:textStyle="bold"
++            android:textColor="@color/black"
++            android:textSize="16sp"
++            android:paddingHorizontal="20dp"
++            android:background="@drawable/cardbg_1">
++        </TextView>
++
++
++
++        </LinearLayout>
++
++    </HorizontalScrollView>
++    <ScrollView
++        android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="125dp"
+-        android:orientation="vertical"
+-        android:padding="10dp">
++        android:layout_marginBottom="100dp"
++
++        >
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="vertical"
++            >
++
++            <RelativeLayout
++                android:id="@+id/relativeLayout_ayurveda"
++                android:layout_width="match_parent"
++                android:layout_height="116dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="20dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/ayurveda_logo" />
+ 
+-        <LinearLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="120dp"
+-            android:background="@drawable/blogbg_1"
+-            android:elevation="4dp">
+-
+-            <FrameLayout
+-                android:layout_width="120dp"
+-                android:layout_height="match_parent"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_4">
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++                        android:orientation="vertical">
++
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:padding="10dp"
++                            android:text="Ayurveda"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
++
++                            android:textStyle="bold" />
++
++
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
++            <RelativeLayout
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginTop="30dp"
++                android:layout_marginHorizontal="10dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true"
++                android:id="@+id/relativeLayout_meditation">>
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:orientation="horizontal"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3">
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:src="@drawable/meditation_logo"
++                        android:padding="5dp"
++                        android:layout_weight="2.6"
++                        />
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++                        >
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:text="Meditation"
++                            android:textSize="20sp"
++                            android:padding="10dp"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textStyle="bold"/>
+ 
+-                <ImageView
+-                    android:layout_width="wrap_content"
+-                    android:layout_height="wrap_content"
+-                    android:src="@drawable/otpi1" />
+-            </FrameLayout>
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
++            <RelativeLayout
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginTop="30dp"
++                android:layout_marginHorizontal="10dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true"
++                android:id="@+id/relativeLayout_acupunture">>
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:orientation="horizontal"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3">
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:src="@drawable/acupunture_logo"
++                        android:padding="5dp"
++                        android:layout_weight="2.6"
++                        />
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++                        >
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:text="Acupunture"
++                            android:textSize="20sp"
++                            android:padding="10dp"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textStyle="bold"/>
++
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
++            <RelativeLayout
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginTop="30dp"
++                android:layout_marginHorizontal="10dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true"
++                android:id="@+id/relativeLayout_yoga">>
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:orientation="horizontal"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3">
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:src="@drawable/yoga_logo"
++                        android:padding="5dp"
++                        android:layout_weight="2.6"
++                        />
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++                        >
++
++                        <TextView
++                            android:layout_width="154dp"
++                            android:layout_height="53dp"
++                            android:padding="10dp"
++                            android:text="Yoga"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
++                            android:textStyle="bold" />
++
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
+ 
+-            <FrameLayout
+-                android:layout_width="120dp"
+-                android:layout_height="match_parent"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_4">
+-
+-                <ImageView
+-                    android:layout_width="wrap_content"
+-                    android:layout_height="wrap_content"
+-                    android:src="@drawable/ill1" />
+-            </FrameLayout>
+-        </LinearLayout>
++
++            <RelativeLayout
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginTop="30dp"
++                android:layout_marginHorizontal="10dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true"
++                android:id="@+id/relativeLayout_hypnotherapy">>
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:orientation="horizontal"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3">
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:src="@drawable/hypnotheraphy_logo"
++                        android:padding="5dp"
++                        android:layout_weight="2.6"
++                        />
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++
++                        >
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:text="Hypnotherapy"
++                            android:textSize="20sp"
++                            android:padding="10dp"
++                            android:textColor="@color/com_facebook_blue"
++
++                            android:textStyle="bold"/>
++
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
+ 
+-        <FrameLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="150dp"
+-            android:layout_marginTop="10dp"
+-            android:background="@drawable/blogbg_1">
+-
+-            <FrameLayout
+-                android:layout_width="120dp"
+-                android:layout_height="match_parent"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_4">
+-
+-                <ImageView
+-                    android:layout_width="wrap_content"
+-                    android:layout_height="wrap_content"
+-                    android:src="@drawable/otpi1" />
+-            </FrameLayout>
+-        </FrameLayout>
++            <RelativeLayout
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginTop="30dp"
++                android:layout_marginHorizontal="10dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true"
++                android:id="@+id/relativeLayout_reiki">>
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:orientation="horizontal"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3">
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:src="@drawable/logo_reiki"
++                        android:padding="5dp"
++                        android:layout_weight="2.6"
++                        />
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++                        >
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:text="Reiki"
++                            android:textSize="20sp"
++                            android:padding="10dp"
++                            android:textColor="@color/com_facebook_blue"
+ 
++                            android:textStyle="bold"/>
++
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
+ 
+-    </LinearLayout>
++        </LinearLayout>
++    </ScrollView>
++
++
++
++
++</FrameLayout>
++
++
++
++
++
++<!--<?xml version="1.0" encoding="utf-8"?>-->
++<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
++<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
++<!--    xmlns:tools="http://schemas.android.com/tools"-->
++<!--    android:layout_width="match_parent"-->
++<!--    android:layout_height="match_parent"-->
++<!--    tools:context=".Fragment.HomeFragment">-->
++
++<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
++
++
++<!--    <RelativeLayout-->
++<!--        android:id="@+id/TOP_START"-->
++<!--        android:layout_width="match_parent"-->
++<!--        android:layout_height="120dp"-->
++<!--        android:background="#25E1E1E1"-->
++<!--        tools:ignore="UselessParent">-->
++
++
++<!--        <TextView-->
++<!--            android:layout_width="200dp"-->
++<!--            android:layout_height="32dp"-->
++<!--            android:layout_alignParentStart="true"-->
++<!--            android:layout_marginStart="10dp"-->
++<!--            android:layout_marginTop="20dp"-->
++<!--            android:text="Bangalore"-->
++<!--            android:textStyle="bold" />-->
++
++
++
++<!--        <androidx.appcompat.widget.SearchView-->
++<!--            android:id="@+id/searchbar"-->
++<!--            android:layout_width="match_parent"-->
++<!--            android:layout_height="48dp"-->
++<!--            android:layout_alignParentEnd="true"-->
++<!--            android:layout_alignParentBottom="true"-->
++<!--            android:layout_marginStart="60dp"-->
++<!--            android:layout_marginEnd="10dp"-->
++<!--            android:layout_marginBottom="10dp"-->
++<!--            android:background="@drawable/login_bg"-->
++<!--            android:clickable="true"-->
++<!--            android:focusable="true"-->
++<!--            app:defaultQueryHint="Search" />-->
++
++<!--        <ImageView-->
++<!--            android:id="@+id/imageView2"-->
++<!--            android:layout_width="48dp"-->
++<!--            android:layout_height="48dp"-->
++<!--            android:layout_alignParentBottom="true"-->
++<!--            android:layout_marginBottom="10dp"-->
++<!--            android:layout_marginStart="10dp"-->
++<!--            android:background="@drawable/login_bg"-->
++<!--            android:src="@drawable/madcoach_logo"-->
++<!--            android:contentDescription="TODO" />-->
++<!--    </RelativeLayout>-->
++
++<!--    <LinearLayout-->
++<!--        android:layout_width="match_parent"-->
++<!--        android:layout_height="match_parent"-->
++<!--        android:layout_marginTop="125dp"-->
++<!--        android:orientation="vertical"-->
++<!--        android:padding="10dp">-->
++
++<!--        <LinearLayout-->
++<!--            android:layout_width="match_parent"-->
++<!--            android:layout_height="120dp"-->
++<!--            android:background="@drawable/blogbg_1"-->
++<!--            android:elevation="4dp">-->
++
++<!--            <FrameLayout-->
++<!--                android:layout_width="120dp"-->
++<!--                android:layout_height="match_parent"-->
++<!--                android:layout_margin="10dp"-->
++<!--                android:background="@drawable/cardbg_4">-->
++
++<!--                <ImageView-->
++<!--                    android:layout_width="wrap_content"-->
++<!--                    android:layout_height="wrap_content"-->
++<!--                    android:src="@drawable/otpi1" />-->
++<!--            </FrameLayout>-->
++
++<!--            <FrameLayout-->
++<!--                android:layout_width="120dp"-->
++<!--                android:layout_height="match_parent"-->
++<!--                android:layout_margin="10dp"-->
++<!--                android:background="@drawable/cardbg_4">-->
++
++<!--                <ImageView-->
++<!--                    android:layout_width="wrap_content"-->
++<!--                    android:layout_height="wrap_content"-->
++<!--                    android:src="@drawable/ill1" />-->
++<!--            </FrameLayout>-->
++<!--        </LinearLayout>-->
++
++<!--        <FrameLayout-->
++<!--            android:layout_width="match_parent"-->
++<!--            android:layout_height="150dp"-->
++<!--            android:layout_marginTop="10dp"-->
++<!--            android:background="@drawable/blogbg_1">-->
++
++<!--            <FrameLayout-->
++<!--                android:layout_width="120dp"-->
++<!--                android:layout_height="match_parent"-->
++<!--                android:layout_margin="10dp"-->
++<!--                android:background="@drawable/cardbg_4">-->
++
++<!--                <ImageView-->
++<!--                    android:layout_width="wrap_content"-->
++<!--                    android:layout_height="wrap_content"-->
++<!--                    android:src="@drawable/otpi1" />-->
++<!--            </FrameLayout>-->
++<!--        </FrameLayout>-->
++
++
++<!--    </LinearLayout>-->
+ 
+-</FrameLayout>
+\ No newline at end of file
++<!--</FrameLayout>-->
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_categories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".Fragment.CategoriesFragment\"\n    android:background=\"@color/white\">\n\n    <!-- TODO: Update blank fragment layout -->\n    <RelativeLayout\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:background=\"@color/DeepSkyBlue\">\n        <androidx.appcompat.widget.SearchView\n            android:id=\"@+id/searchbar\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"48dp\"\n            android:layout_marginTop=\"20dp\"\n            android:layout_marginStart=\"10dp\"\n            android:layout_marginEnd=\"10dp\"\n            android:layout_marginBottom=\"10dp\"\n            android:background=\"@drawable/login_bg\"\n            android:clickable=\"true\"\n            android:focusable=\"true\" />\n    </RelativeLayout>\n\n    <HorizontalScrollView\n        android:layout_marginHorizontal=\"10dp\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:layout_alignParentBottom=\"true\"\n        android:paddingVertical=\"4dp\"\n        android:layout_marginTop=\"80dp\"\n        android:scrollbars=\"none\">\n\n        <LinearLayout\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"28dp\"\n            android:orientation=\"horizontal\">\n\n\n\n            <TextView\n                android:id=\"@+id/view12\"\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"match_parent\"\n                android:layout_marginHorizontal=\"5dp\"\n                android:layout_weight=\"1\"\n                android:text=\"All\"\n                android:gravity=\"center\"\n                android:textStyle=\"bold\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"16sp\"\n                android:paddingHorizontal=\"20dp\"\n                android:background=\"@drawable/cardbg_1\">\n            </TextView>\n            <TextView\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"match_parent\"\n                android:layout_marginHorizontal=\"5dp\"\n                android:layout_weight=\"1\"\n                android:text=\"Ayurveda\"\n                android:gravity=\"center\"\n                android:textStyle=\"bold\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"16sp\"\n                android:paddingHorizontal=\"20dp\"\n                android:background=\"@drawable/cardbg_1\">\n            </TextView>\n            <TextView\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"match_parent\"\n                android:layout_marginHorizontal=\"5dp\"\n                android:layout_weight=\"1\"\n                android:text=\"Meditation\"\n                android:gravity=\"center\"\n                android:textStyle=\"bold\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"16sp\"\n                android:paddingHorizontal=\"20dp\"\n                android:background=\"@drawable/cardbg_4\">\n            </TextView>\n            <TextView\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"match_parent\"\n                android:layout_marginHorizontal=\"5dp\"\n                android:layout_weight=\"1\"\n                android:text=\"Acupuncture\"\n                android:gravity=\"center\"\n                android:textStyle=\"bold\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"16sp\"\n                android:paddingHorizontal=\"20dp\"\n                android:background=\"@drawable/cardbg_1\">\n            </TextView>\n            <TextView\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"match_parent\"\n                android:layout_marginHorizontal=\"5dp\"\n                android:layout_weight=\"1\"\n                android:text=\"Hypnotherapy\"\n                android:gravity=\"center\"\n                android:textStyle=\"bold\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"16sp\"\n                android:paddingHorizontal=\"20dp\"\n                android:background=\"@drawable/cardbg_1\">\n            </TextView>\n            <TextView\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"match_parent\"\n                android:layout_marginHorizontal=\"5dp\"\n                android:layout_weight=\"1\"\n                android:text=\"Yoga\"\n                android:gravity=\"center\"\n                android:textStyle=\"bold\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"16sp\"\n                android:paddingHorizontal=\"20dp\"\n                android:background=\"@drawable/cardbg_1\">\n            </TextView><TextView\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"match_parent\"\n            android:layout_marginHorizontal=\"5dp\"\n            android:layout_weight=\"1\"\n            android:text=\"Ricki\"\n            android:gravity=\"center\"\n            android:textStyle=\"bold\"\n            android:textColor=\"@color/black\"\n            android:textSize=\"16sp\"\n            android:paddingHorizontal=\"20dp\"\n            android:background=\"@drawable/cardbg_1\">\n        </TextView>\n\n\n\n        </LinearLayout>\n\n    </HorizontalScrollView>\n    <ScrollView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"match_parent\"\n        android:layout_marginTop=\"125dp\"\n        android:layout_marginBottom=\"100dp\"\n\n        >\n\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"vertical\"\n        >\n\n        <RelativeLayout\n            android:id=\"@+id/relativeLayout_ayurveda\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"116dp\"\n            android:layout_marginHorizontal=\"10dp\"\n            android:layout_marginTop=\"20dp\"\n            android:background=\"@drawable/cardbg_2\"\n            android:clickable=\"true\">\n\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_3\"\n                android:orientation=\"horizontal\">\n\n                <ImageView\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"2.6\"\n                    android:padding=\"5dp\"\n                    android:src=\"@drawable/ayurveda_logo\" />\n\n                <LinearLayout\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:gravity=\"center_vertical\"\n                    android:orientation=\"vertical\">\n\n                    <TextView\n                        android:layout_width=\"wrap_content\"\n                        android:layout_height=\"wrap_content\"\n                        android:padding=\"10dp\"\n                        android:text=\"Ayurveda\"\n                        android:textColor=\"@color/com_facebook_blue\"\n                        android:textSize=\"20sp\"\n\n                        android:textStyle=\"bold\" />\n\n\n                </LinearLayout>\n            </LinearLayout>\n        </RelativeLayout>\n        <RelativeLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"120dp\"\n            android:layout_marginTop=\"30dp\"\n            android:layout_marginHorizontal=\"10dp\"\n            android:background=\"@drawable/cardbg_2\"\n            android:clickable=\"true\"\n            android:id=\"@+id/relativeLayout_meditation\">>\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:orientation=\"horizontal\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_3\">\n                <ImageView\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:src=\"@drawable/meditation_logo\"\n                    android:padding=\"5dp\"\n                    android:layout_weight=\"2.6\"\n                    />\n                <LinearLayout\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:gravity=\"center_vertical\"\n                    >\n                    <TextView\n                        android:layout_width=\"wrap_content\"\n                        android:layout_height=\"wrap_content\"\n                        android:text=\"Meditation\"\n                        android:textSize=\"20sp\"\n                        android:padding=\"10dp\"\n                        android:textColor=\"@color/com_facebook_blue\"\n                        android:textStyle=\"bold\"/>\n\n                </LinearLayout>\n            </LinearLayout>\n        </RelativeLayout>\n        <RelativeLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"120dp\"\n            android:layout_marginTop=\"30dp\"\n            android:layout_marginHorizontal=\"10dp\"\n            android:background=\"@drawable/cardbg_2\"\n            android:clickable=\"true\"\n            android:id=\"@+id/relativeLayout_acupunture\">>\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:orientation=\"horizontal\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_3\">\n                <ImageView\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:src=\"@drawable/acupunture_logo\"\n                    android:padding=\"5dp\"\n                    android:layout_weight=\"2.6\"\n                    />\n                <LinearLayout\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:gravity=\"center_vertical\"\n                    >\n                    <TextView\n                        android:layout_width=\"wrap_content\"\n                        android:layout_height=\"wrap_content\"\n                        android:text=\"Acupunture\"\n                        android:textSize=\"20sp\"\n                        android:padding=\"10dp\"\n                        android:textColor=\"@color/com_facebook_blue\"\n                        android:textStyle=\"bold\"/>\n\n                </LinearLayout>\n            </LinearLayout>\n        </RelativeLayout>\n        <RelativeLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"120dp\"\n            android:layout_marginTop=\"30dp\"\n            android:layout_marginHorizontal=\"10dp\"\n            android:background=\"@drawable/cardbg_2\"\n            android:clickable=\"true\"\n            android:id=\"@+id/relativeLayout_yoga\">>\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:orientation=\"horizontal\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_3\">\n                <ImageView\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:src=\"@drawable/yoga_logo\"\n                    android:padding=\"5dp\"\n                    android:layout_weight=\"2.6\"\n                    />\n                <LinearLayout\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:gravity=\"center_vertical\"\n                    >\n\n                    <TextView\n                        android:layout_width=\"154dp\"\n                        android:layout_height=\"53dp\"\n                        android:padding=\"10dp\"\n                        android:text=\"Yoga\"\n                        android:textColor=\"@color/com_facebook_blue\"\n                        android:textSize=\"20sp\"\n                        android:textStyle=\"bold\" />\n\n                </LinearLayout>\n            </LinearLayout>\n        </RelativeLayout>\n\n\n        <RelativeLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"120dp\"\n            android:layout_marginTop=\"30dp\"\n            android:layout_marginHorizontal=\"10dp\"\n            android:background=\"@drawable/cardbg_2\"\n            android:clickable=\"true\"\n            android:id=\"@+id/relativeLayout_hypnotherapy\">>\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:orientation=\"horizontal\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_3\">\n                <ImageView\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:src=\"@drawable/hypnotheraphy_logo\"\n                    android:padding=\"5dp\"\n                    android:layout_weight=\"2.6\"\n                    />\n                <LinearLayout\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:gravity=\"center_vertical\"\n\n                    >\n                    <TextView\n                        android:layout_width=\"wrap_content\"\n                        android:layout_height=\"wrap_content\"\n                        android:text=\"Hypnotherapy\"\n                        android:textSize=\"20sp\"\n                        android:padding=\"10dp\"\n                        android:textColor=\"@color/com_facebook_blue\"\n\n                        android:textStyle=\"bold\"/>\n\n                </LinearLayout>\n            </LinearLayout>\n        </RelativeLayout>\n\n        <RelativeLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"120dp\"\n            android:layout_marginTop=\"30dp\"\n            android:layout_marginHorizontal=\"10dp\"\n            android:background=\"@drawable/cardbg_2\"\n            android:clickable=\"true\"\n            android:id=\"@+id/relativeLayout_reiki\">>\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:orientation=\"horizontal\"\n                android:layout_margin=\"10dp\"\n                android:background=\"@drawable/cardbg_3\">\n                <ImageView\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:src=\"@drawable/logo_reiki\"\n                    android:padding=\"5dp\"\n                    android:layout_weight=\"2.6\"\n                    />\n                <LinearLayout\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:gravity=\"center_vertical\"\n                    >\n                    <TextView\n                        android:layout_width=\"wrap_content\"\n                        android:layout_height=\"wrap_content\"\n                        android:text=\"Reiki\"\n                        android:textSize=\"20sp\"\n                        android:padding=\"10dp\"\n                        android:textColor=\"@color/com_facebook_blue\"\n\n                        android:textStyle=\"bold\"/>\n\n                </LinearLayout>\n            </LinearLayout>\n        </RelativeLayout>\n\n    </LinearLayout>\n    </ScrollView>\n\n\n\n\n</FrameLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_categories.xml b/app/src/main/res/layout/fragment_categories.xml
+--- a/app/src/main/res/layout/fragment_categories.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/layout/fragment_categories.xml	(date 1687244890485)
+@@ -137,6 +137,7 @@
+         </LinearLayout>
+ 
+     </HorizontalScrollView>
++
+     <ScrollView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+@@ -145,263 +146,273 @@
+ 
+         >
+ 
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:orientation="vertical"
+-        >
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="vertical">
+ 
+-        <RelativeLayout
+-            android:id="@+id/relativeLayout_ayurveda"
+-            android:layout_width="match_parent"
+-            android:layout_height="116dp"
+-            android:layout_marginHorizontal="10dp"
+-            android:layout_marginTop="20dp"
+-            android:background="@drawable/cardbg_2"
+-            android:clickable="true">
++            <RelativeLayout
++                android:id="@+id/relativeLayout_ayurveda"
++                android:layout_width="match_parent"
++                android:layout_height="116dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="20dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">
+ 
+-            <LinearLayout
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_3"
+-                android:orientation="horizontal">
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
+ 
+-                <ImageView
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="2.6"
+-                    android:padding="5dp"
+-                    android:src="@drawable/ayurveda_logo" />
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/ayurveda_logo" />
+ 
+-                <LinearLayout
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="1"
+-                    android:gravity="center_vertical"
+-                    android:orientation="vertical">
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
++                        android:orientation="vertical">
+ 
+-                    <TextView
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:padding="10dp"
+-                        android:text="Ayurveda"
+-                        android:textColor="@color/com_facebook_blue"
+-                        android:textSize="20sp"
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:padding="10dp"
++                            android:text="Ayurveda"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
+ 
+-                        android:textStyle="bold" />
++                            android:textStyle="bold" />
+ 
+ 
+-                </LinearLayout>
+-            </LinearLayout>
+-        </RelativeLayout>
+-        <RelativeLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="120dp"
+-            android:layout_marginTop="30dp"
+-            android:layout_marginHorizontal="10dp"
+-            android:background="@drawable/cardbg_2"
+-            android:clickable="true"
+-            android:id="@+id/relativeLayout_meditation">>
+-            <LinearLayout
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:orientation="horizontal"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_3">
+-                <ImageView
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:src="@drawable/meditation_logo"
+-                    android:padding="5dp"
+-                    android:layout_weight="2.6"
+-                    />
+-                <LinearLayout
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="1"
+-                    android:gravity="center_vertical"
+-                    >
+-                    <TextView
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:text="Meditation"
+-                        android:textSize="20sp"
+-                        android:padding="10dp"
+-                        android:textColor="@color/com_facebook_blue"
+-                        android:textStyle="bold"/>
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
++
++            <RelativeLayout
++                android:id="@+id/relativeLayout_meditation"
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="30dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">>
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/meditation_logo" />
++
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical">
++
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:padding="10dp"
++                            android:text="Meditation"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
++                            android:textStyle="bold" />
+ 
+-                </LinearLayout>
+-            </LinearLayout>
+-        </RelativeLayout>
+-        <RelativeLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="120dp"
+-            android:layout_marginTop="30dp"
+-            android:layout_marginHorizontal="10dp"
+-            android:background="@drawable/cardbg_2"
+-            android:clickable="true"
+-            android:id="@+id/relativeLayout_acupunture">>
+-            <LinearLayout
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:orientation="horizontal"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_3">
+-                <ImageView
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:src="@drawable/acupunture_logo"
+-                    android:padding="5dp"
+-                    android:layout_weight="2.6"
+-                    />
+-                <LinearLayout
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="1"
+-                    android:gravity="center_vertical"
+-                    >
+-                    <TextView
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:text="Acupunture"
+-                        android:textSize="20sp"
+-                        android:padding="10dp"
+-                        android:textColor="@color/com_facebook_blue"
+-                        android:textStyle="bold"/>
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
++
++            <RelativeLayout
++                android:id="@+id/relativeLayout_acupunture"
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="30dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">>
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/acupunture_logo" />
++
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical">
++
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:padding="10dp"
++                            android:text="Acupunture"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
++                            android:textStyle="bold" />
+ 
+-                </LinearLayout>
+-            </LinearLayout>
+-        </RelativeLayout>
+-        <RelativeLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="120dp"
+-            android:layout_marginTop="30dp"
+-            android:layout_marginHorizontal="10dp"
+-            android:background="@drawable/cardbg_2"
+-            android:clickable="true"
+-            android:id="@+id/relativeLayout_yoga">>
+-            <LinearLayout
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:orientation="horizontal"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_3">
+-                <ImageView
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:src="@drawable/yoga_logo"
+-                    android:padding="5dp"
+-                    android:layout_weight="2.6"
+-                    />
+-                <LinearLayout
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="1"
+-                    android:gravity="center_vertical"
+-                    >
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
++
++            <RelativeLayout
++                android:id="@+id/relativeLayout_yoga"
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="30dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">>
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/yoga_logo" />
++
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical">
+ 
+-                    <TextView
+-                        android:layout_width="154dp"
+-                        android:layout_height="53dp"
+-                        android:padding="10dp"
+-                        android:text="Yoga"
+-                        android:textColor="@color/com_facebook_blue"
+-                        android:textSize="20sp"
+-                        android:textStyle="bold" />
++                        <TextView
++                            android:layout_width="154dp"
++                            android:layout_height="53dp"
++                            android:padding="10dp"
++                            android:text="Yoga"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
++                            android:textStyle="bold" />
+ 
+-                </LinearLayout>
+-            </LinearLayout>
+-        </RelativeLayout>
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
+ 
+ 
+-        <RelativeLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="120dp"
+-            android:layout_marginTop="30dp"
+-            android:layout_marginHorizontal="10dp"
+-            android:background="@drawable/cardbg_2"
+-            android:clickable="true"
+-            android:id="@+id/relativeLayout_hypnotherapy">>
+-            <LinearLayout
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:orientation="horizontal"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_3">
+-                <ImageView
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:src="@drawable/hypnotheraphy_logo"
+-                    android:padding="5dp"
+-                    android:layout_weight="2.6"
+-                    />
+-                <LinearLayout
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="1"
+-                    android:gravity="center_vertical"
++            <RelativeLayout
++                android:id="@+id/relativeLayout_hypnotherapy"
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="30dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">>
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/hypnotheraphy_logo" />
++
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical"
+ 
+-                    >
+-                    <TextView
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:text="Hypnotherapy"
+-                        android:textSize="20sp"
+-                        android:padding="10dp"
+-                        android:textColor="@color/com_facebook_blue"
++                        >
++
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:padding="10dp"
++                            android:text="Hypnotherapy"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
+ 
+-                        android:textStyle="bold"/>
++                            android:textStyle="bold" />
+ 
+-                </LinearLayout>
+-            </LinearLayout>
+-        </RelativeLayout>
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
+ 
+-        <RelativeLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="120dp"
+-            android:layout_marginTop="30dp"
+-            android:layout_marginHorizontal="10dp"
+-            android:background="@drawable/cardbg_2"
+-            android:clickable="true"
+-            android:id="@+id/relativeLayout_reiki">>
+-            <LinearLayout
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:orientation="horizontal"
+-                android:layout_margin="10dp"
+-                android:background="@drawable/cardbg_3">
+-                <ImageView
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:src="@drawable/logo_reiki"
+-                    android:padding="5dp"
+-                    android:layout_weight="2.6"
+-                    />
+-                <LinearLayout
+-                    android:layout_width="match_parent"
+-                    android:layout_height="match_parent"
+-                    android:layout_weight="1"
+-                    android:gravity="center_vertical"
+-                    >
+-                    <TextView
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:text="Reiki"
+-                        android:textSize="20sp"
+-                        android:padding="10dp"
+-                        android:textColor="@color/com_facebook_blue"
++            <RelativeLayout
++                android:id="@+id/relativeLayout_reiki"
++                android:layout_width="match_parent"
++                android:layout_height="120dp"
++                android:layout_marginHorizontal="10dp"
++                android:layout_marginTop="30dp"
++                android:background="@drawable/cardbg_2"
++                android:clickable="true">>
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_margin="10dp"
++                    android:background="@drawable/cardbg_3"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="2.6"
++                        android:padding="5dp"
++                        android:src="@drawable/logo_reiki" />
++
++                    <LinearLayout
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_weight="1"
++                        android:gravity="center_vertical">
++
++                        <TextView
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:padding="10dp"
++                            android:text="Reiki"
++                            android:textColor="@color/com_facebook_blue"
++                            android:textSize="20sp"
+ 
+-                        android:textStyle="bold"/>
++                            android:textStyle="bold" />
+ 
+-                </LinearLayout>
+-            </LinearLayout>
+-        </RelativeLayout>
++                    </LinearLayout>
++                </LinearLayout>
++            </RelativeLayout>
+ 
+-    </LinearLayout>
++        </LinearLayout>
+     </ScrollView>
+ 
+ 
+-
+-
+ </FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\n    <string name=\"app_name\">MedCoach</string>\n    <!-- TODO: Remove or change this placeholder text -->\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\n    <string name=\"password\">Password</string>\n    <string name=\"email_id_mob_no\">Email ID/Mob No</string>\n    <string name=\"email_id\">Email ID</string>\n    <string name=\"phone_no\">Phone No </string>\n    <string name=\"full_name\">Full Name</string>\n    <string name=\"confirm_password\">Confirm Password</string>\n    <string name=\"reset\">reset</string>\n    <string name=\"register\">Register</string>\n    <string name=\"please_enter_the_otp_sent_to_you\">Please Enter the OTP sent to you</string>\n    <string name=\"otp_verfication\">OTP Verfication</string>\n    <string name=\"resend_otp\">RESEND</string>\n    <string name=\"didn_t_receive_the_otp\">Didn\\'t receive the OTP</string>\n    <string name=\"submit\">Submit</string>\n    <string name=\"Yoga\">7 Types of Mediation</string>\n    <string name=\"create_profile\">Create Profile</string>\n    <string name=\"meditation\">Meditation</string>\n\n\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/values/strings.xml	(date 1687242535839)
+@@ -18,6 +18,57 @@
+     <string name="Yoga">7 Types of Mediation</string>
+     <string name="create_profile">Create Profile</string>
+     <string name="meditation">Meditation</string>
++    <string name="ayurveda_intro"> It is often used as a technique to achieve mental relaxation, self-awareness, and spiritual growth. Meditation involves various techniques such as mindfulness, concentration, visualization, or contemplation. It is practiced in numerous cultures and religions worldwide and has gained popularity due to its potential benefits for mental, emotional, and physical well-being.</string>
++    <string name="introduction_to_meditation"><b>Introduction of Meditation:</b>\nMeditation is a practice that involves focusing one\'s mind and cultivating a state of calmness, clarity, and emotional balance. It is often used as a technique to achieve mental relaxation, self-awareness, and spiritual growth. Meditation involves various techniques such as mindfulness, concentration, visualization, or contemplation. It is practiced in numerous cultures and religions worldwide and has gained popularity due to its potential benefits for mental, emotional, and physical well-being.</string>
+ 
++    <string name="origin_of_meditation"><b>origin of meditation:</b>
++        The origins of meditation can be traced back thousands of years across different cultures and traditions. Various forms of meditation have been practiced in ancient civilizations including India, China, Egypt, Greece, and Japan. However, one of the earliest recorded instances of meditation comes from ancient India, particularly in the yogic traditions of Hinduism and later in Buddhism. Meditation techniques were developed and refined as a means to achieve self-realization, enlightenment, and spiritual awakening.</string>
+ 
++    <string name="uses_and_advantages_of_meditation"><b>Uses and Advantages of Meditation:</b></string>
++    <string name="names_in_the_list_medi">      Meditation offers a wide range of uses and advantages for individuals who practice it regularly. Some of the key benefits include:\nStress reduction:Meditation is known to calm the mind and relax the body, helping to reduce stress and anxiety. It promotes a sense of inner peace and overall well-being.\nImproved mental clarity and focus: Regular meditation practice enhances concentration and improves cognitive abilities. It helps to clear the mind of distractions and enhances mental clarity and focus.\nEmotional well-being: Meditation can lead to improved emotional resilience and regulation. It helps individuals develop a better understanding of their emotions and cultivates a more balanced and positive outlook on life.\nEnhanced self-awareness: By practicing meditation, individuals can develop a deeper understanding of themselves, their thoughts, and their behaviors. This self-awareness can lead to personal growth and transformation.\nBetter physical health: Meditation has been linked to several physical health benefits, including reduced blood pressure, improved immune function, better sleep quality, and pain management.\nSpiritual growth: Meditation is an integral part of many spiritual and religious traditions, facilitating spiritual growth, self-discovery, and a deeper connection with one\'s inner self or higher power.</string>
++    <string name="practioner_medi"><b>Meditation Practices in Bangalore:</b></string>
++    <string name="names_of_practioner_medi">    Bangalore offers several places where individuals can practice meditation. Some of the popular centers and organizations that offer meditation classes, workshops, or retreats in Bangalore include:\nArt of Living International Center: The Art of Living organization, founded by Sri Sri Ravi Shankar, has its international center located on the outskirts of Bangalore. It offers various meditation programs, including the popular Sudarshan Kriya technique.
++Isha Yoga Center: The Isha Foundation, founded by Sadhguru Jaggi Vasudev, has its main center, the Isha Yoga Center, located near Bangalore. It offers various meditation programs and practices, including the powerful Inner Engineering program.
++Pranic Healing Foundation of Karnataka: This foundation conducts meditation sessions based on the principles of Pranic Healing, which focus on the subtle energy body for holistic well-being.
++Bangalore Meditation Center: This center offers regular meditation classes and workshops to help individuals learn and practice different meditation techniques.</string>
++<!--    dAyurveda-->
++    <string name="introduction_of_auyerveda"><b>Introduction of Ayurveda:</b>\n\t Ayurveda, meaning \"knowledge of life,\" is an ancient holistic healing system that originated in India thousands of years ago. It is based on the belief that health and wellness depend on a delicate balance between the mind, body, and spirit. Ayurveda aims to promote overall well-being by focusing on individualized treatments, natural remedies, diet, lifestyle modifications, and herbal medicines.</string>
++    <string name="origin_of_auyerveda"><b>Origin of Ayurveda:</b>\n\tAyurveda has its roots in the ancient Indian scriptures known as the Vedas, particularly the Atharva Veda. These texts contain a wealth of knowledge on various aspects of life, including medicine and healthcare. Ayurveda evolved over centuries, influenced by the contributions of several eminent scholars and practitioners, such as Charaka and Sushruta, who compiled and systematized its principles and practices.</string>
++    <string name="uses_and_advantages_of_auyerveda"><b>Uses and Advantages of Auyerveda:</b>\n\tPreventive and Promotive Healthcare: Ayurveda emphasizes disease prevention and promotes overall well-being through lifestyle practices, diet, and herbal remedies. It focuses on maintaining balance and harmony within the body, which helps in preventing various diseases.
++Holistic Approach: Ayurveda considers the individual as a whole and takes into account physical, mental, emotional, and spiritual aspects of health. It aims to address the root cause of the illness rather than just managing symptoms, promoting long-term healing.\nPersonalized Treatment: Ayurveda recognizes that each individual is unique, with a specific body constitution or \"prakriti.\" Treatment plans are customized according to an individual\'s prakriti, ensuring personalized care and effective outcomes.
++\nNatural Remedies: Ayurveda utilizes a wide range of natural remedies, incluing herbal medicines, dietary modifications, massage therapies, meditation, yoga, and detoxification techniques. These natural approaches are believed to be gentle, safe, and have minimal side effects.
++Complementary to Modern Medicine: Ayurveda can complement modern medical treatments. It can be used as an integrative approach to enhance the effectiveness of conventional medicine or to manage chronic conditions.</string>
++    <string name="practioner_ayur"><b>Practitioners of Ayurveda in Bangalore:</b></string>
++    <string name="names_of_the_practioner_auyer">Bangalore, a thriving metropolitan city in India, has a significant presence of Ayurvedic practitioners and centers. These practitioners, known as Ayurvedic doctors or vaidyas, offer a range of services, including consultations, treatments, therapies, and wellness programs. Some renowned Ayurvedic hospitals, clinics, and wellness centers in Bangalore include:
++Sri Sri Tattva Panchakarma: A well-known Ayurvedic center offering traditional Ayurvedic treatments and therapies for various ailments and wellness programs.
++Keva Ayurveda: This Ayurvedic clinic provides personalized treatments, consultations, and therapies, focusing on chronic illnesses, lifestyle disorders, and rejuvenation.
++Ayurvedagram Heritage Wellness Center: Located on the outskirts of Bangalore, this center offers authentic Ayurvedic treatments, therapies, and wellness programs in a serene environment.
++The Art of Living Panchakarma: Associated with The Art of Living Foundation, this center offers Panchakarma therapies and Ayurvedic treatments for a range of health conditions.Some popular centers for Ayurvedic treatments and practices in Bangalore include:
++Ayurvedagram Heritage Wellness Center
++Address: No. 136, Behind Bheemaneni Park, Hulimavu, Bannerghatta Road, Bengaluru, Karnataka 560076
++Jindal Naturecure Institute
++Address: Tumkur Road, opposite Bangalore International Exhibition Centre (BIEC), Bengaluru, Karnataka 560073
++Keva Ayurveda Healthcare Pvt. Ltd.
++Address: 5th Main, 3rd Phase, JP Nagar, Bengaluru, Karnataka 560078
++Art of Living Panchakarma Center
++Address: Ved Vignan Maha Vidya Peeth, 21st Km, Kanakapura Road, Udayapura, Bengaluru, Karnataka 560082
++</string>
++<!--    hypnotherapy-->
++    <string name="intro_to_hypno"><b>Introduction of Hypnography</b>
++        \n\tHypnotherapy is a therapeutic technique that utilizes hypnosis to induce a state of deep relaxation and focused attention. It is used to access the subconscious mind and facilitate positive changes in thoughts, behaviors, and emotions. Hypnotherapy aims to address a wide range of issues, including overcoming fears and phobias, managing stress and anxiety, breaking unhealthy habits, improving self-esteem, and promoting personal growth. In Bangalore, the capital city of Karnataka in India, hypnotherapy has gained recognition as an effective complementary therapy for various psychological and emotional challenges.</string>
++    <string name="origin_of_hypno"><b>Origin of Hypnotherapy:</b>
++        \n\tThe practice of hypnosis dates back to ancient times, with evidence of hypnotic-like techniques found in Egyptian and Greek cultures. However, the modern concept of hypnotherapy emerged in the late 18th century with the work of Franz Mesmer and James Braid. Mesmer developed a healing technique called "mesmerism," which involved inducing a trance-like state to treat various ailments. James Braid later coined the term "hypnosis" and refined the therapeutic applications of this method. Over the years, hypnotherapy has evolved into a recognized therapeutic approach,combining elements of psychology, neuroscience, and suggestion.</string>
++    <string name="uses_of_hyno"><b>Uses and Advantages of Hypnotherapy:</b></string>
++    <string name="adv_list">Hypnotherapy offers a range of uses and advantages in addressing various psychological and emotional issues. Some common applications include:\n\n\tBehavior Modification: Hypnotherapy can help individuals overcome unwanted habits or behaviors such as smoking, nail-biting, overeating, and substance abuse. By accessing the subconscious mind, hypnotherapy aims to reprogram negative patterns and promote positive change.
++\nStress and Anxiety Management: Hypnotherapy techniques, such as relaxation induction and guided imagery, can assist in managing stress, anxiety, and related symptoms. By inducing deep relaxation, hypnotherapy helps individuals access their inner resources to cope with stressors effectively.
++\nPhobia and Fear Resolution: Hypnotherapy is effective in treating phobias and fears by exploring their root causes and desensitizing the associated anxiety responses. Through guided visualization and suggestion, hypnotherapy helps individuals reframe their perception and response to specific triggers.
++\nSelf-Exploration and Personal Growth: Hypnotherapy can aid in self-exploration, enhancing self-awareness, and promoting personal growth. By accessing the subconscious mind, individuals can gain insights into their motivations, beliefs, and past experiences, facilitating personal transformation and empowerment.
++\nPain Management: Hypnotherapy techniques can be utilized to manage chronic pain conditions. By altering perceptions and promoting relaxation, hypnotherapy can help individuals </string>
++    <string name="practioner_hypno"><b>Practices of Hypnotherapy in Bangalore:</b>\n\tIn Bangalore, there are qualified hypnotherapists and wellness centers that offer hypnotherapy services. Some common practices and approaches include:</string>
++    <string name="names_of_practioner_hypno">Initial Assessment: Hypnotherapy sessions in Bangalore usually begin with an initial assessment to understand the individual\'s specific concerns, goals, and medical history. This assessment helps the hypnotherapist tailor the sessions to the individual\'s needs.
++Induction and Trance State: Hypnotherapy sessions involve inducing a relaxed and focused state known as a trance. The hypnotherapist uses techniques such as guided visualization, progressive muscle relaxation, and deep breathing to facilitate this state.
++Suggestion and Visualization: During the trance state, the hypnotherapist provides suggestions and employs visualization techniques to help individuals create positive changes. These suggestions are aimed at promoting desired behaviors, beliefs, and emotions.
++Regression Therapy: In certain cases, hypnotherapy may involve regression techniques, where individuals are guided to explore past experiences and memories. This approach helps identify and address underlying issues contributing to current challenges.
++</string>
++<!--    Acupunture-->
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_cate_hypnotherapy.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".cate_hypnotherapy\">\n    <ScrollView\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\">\n        <LinearLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\"\n            android:orientation=\"vertical\">\n            <TextView\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:layout_margin=\"20dp\"\n                android:text=\"Hypnotheraphy\"\n                android:textStyle=\"bold\"\n                android:padding=\"10sp\"\n                android:textSize=\"28sp\"/>\n            <ImageView\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:padding=\"10dp\"\n                android:layout_margin=\"10sp\"\n                android:src=\"@drawable/img3\"/>\n\n\n\n        </LinearLayout>\n    </ScrollView>\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_cate_hypnotherapy.xml b/app/src/main/res/layout/activity_cate_hypnotherapy.xml
+--- a/app/src/main/res/layout/activity_cate_hypnotherapy.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/layout/activity_cate_hypnotherapy.xml	(date 1687243852674)
+@@ -1,17 +1,16 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".cate_hypnotherapy">
+-    <ScrollView
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent">
+-        <LinearLayout
+-            android:layout_width="match_parent"
+-            android:layout_height="match_parent"
+-            android:orientation="vertical">
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:orientation="vertical">
++
++
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+@@ -22,13 +21,58 @@
+                 android:textSize="28sp"/>
+             <ImageView
+                 android:layout_width="match_parent"
+-                android:layout_height="wrap_content"
++                android:layout_height="300dp"
+                 android:padding="10dp"
+                 android:layout_margin="10sp"
+-                android:src="@drawable/img3"/>
++                android:src="@drawable/home_hypno1"/>
++
+ 
+ 
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="vertical">
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:justificationMode="inter_word"
++            android:text="@string/intro_to_hypno"
++            />
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:justificationMode="inter_word"
++            android:text="@string/origin_of_hypno"/>
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:justificationMode="inter_word"
++            android:text="@string/uses_of_hyno"/>
+ 
+-        </LinearLayout>
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:justificationMode="inter_word"
++            android:text="@string/adv_list"/>
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:justificationMode="inter_word"
++            android:text="@string/practioner_hypno"/>
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:justificationMode="inter_word"
++            android:text="@string/names_of_practioner_hypno"/>
++
++
++    </LinearLayout>
++    </LinearLayout>
++
+     </ScrollView>
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/medical/medcoach/Fragment/HomeFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.medical.medcoach.Fragment;\n\nimport android.os.Bundle;\n\nimport androidx.fragment.app.Fragment;\n\nimport android.view.LayoutInflater;\nimport android.view.View;\nimport android.view.ViewGroup;\n\nimport com.medical.medcoach.R;\nimport com.medical.medcoach.databinding.ActivityMainBinding;\n\n\npublic class HomeFragment extends Fragment {\n\n\n    @Override\n    public View onCreateView(LayoutInflater inflater, ViewGroup container,\n                             Bundle savedInstanceState) {\n        return inflater.inflate(R.layout.fragment_home, container, false);\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/medical/medcoach/Fragment/HomeFragment.java b/app/src/main/java/com/medical/medcoach/Fragment/HomeFragment.java
+--- a/app/src/main/java/com/medical/medcoach/Fragment/HomeFragment.java	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/java/com/medical/medcoach/Fragment/HomeFragment.java	(date 1687195856931)
+@@ -1,5 +1,6 @@
+ package com.medical.medcoach.Fragment;
+ 
++import android.content.Intent;
+ import android.os.Bundle;
+ 
+ import androidx.fragment.app.Fragment;
+@@ -7,17 +8,65 @@
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
++import android.widget.RelativeLayout;
++import android.widget.ScrollView;
+ 
+ import com.medical.medcoach.R;
++import com.medical.medcoach.cate_acupuncture;
++import com.medical.medcoach.cate_ayurveda;
++import com.medical.medcoach.cate_hypnotherapy;
++import com.medical.medcoach.cate_meditation;
++import com.medical.medcoach.cate_reiki;
++import com.medical.medcoach.cate_yoga;
+ import com.medical.medcoach.databinding.ActivityMainBinding;
+ 
+ 
+ public class HomeFragment extends Fragment {
+ 
++    private ScrollView scrollView1;
+ 
+     @Override
+-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+-                             Bundle savedInstanceState) {
+-        return inflater.inflate(R.layout.fragment_home, container, false);
++    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
++        View view = inflater.inflate(R.layout.fragment_home, container, false);
++
++        RelativeLayout relativeLayout = view.findViewById(R.id.relativeLayout_ayurveda);
++
++        relativeLayout.setOnClickListener(v -> {
++            Intent intent = new Intent(getActivity(), cate_ayurveda.class);
++            startActivity(intent);
++        });
++
++        RelativeLayout relativeLayout1=view.findViewById(R.id.relativeLayout_meditation);
++        relativeLayout1.setOnClickListener(v -> {
++            Intent intent = new Intent(getActivity(), cate_meditation.class);
++            startActivity(intent);
++        });
++
++        RelativeLayout relativeLayout2=view.findViewById(R.id.relativeLayout_acupunture);
++        relativeLayout2.setOnClickListener(v -> {
++            Intent intent=new Intent(getActivity(), cate_acupuncture.class);
++            startActivity(intent);
++        });
++
++        RelativeLayout relativeLayout3=view.findViewById(R.id.relativeLayout_yoga);
++        relativeLayout3.setOnClickListener(v -> {
++            Intent intent=new Intent(getActivity(), cate_yoga.class);
++            startActivity(intent);
++        });
++
++        RelativeLayout relativeLayout4=view.findViewById(R.id.relativeLayout_hypnotherapy);
++        relativeLayout4.setOnClickListener(v->{
++                Intent intent=new Intent(getActivity(), cate_hypnotherapy.class);
++                startActivity(intent);
++        });
++
++        RelativeLayout relativeLayout5=view.findViewById(R.id.relativeLayout_reiki);
++        relativeLayout5.setOnClickListener(v-> {
++                Intent intent = new Intent(getActivity(), cate_reiki.class);
++                startActivity(intent);
++            });
++        return view;
++
+     }
++
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_cate_meditation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".cate_meditation\">\n<ScrollView\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\">\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        android:orientation=\"vertical\">\n        <TextView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"20dp\"\n            android:text=\"@string/meditation\"\n            android:textStyle=\"bold\"\n            android:padding=\"10sp\"\n            android:textSize=\"28sp\"/>\n        <ImageView\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:padding=\"10dp\"\n            android:layout_margin=\"10sp\"\n            android:src=\"@drawable/img3\"/>\n\n\n\n    </LinearLayout>\n</ScrollView>\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_cate_meditation.xml b/app/src/main/res/layout/activity_cate_meditation.xml
+--- a/app/src/main/res/layout/activity_cate_meditation.xml	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/res/layout/activity_cate_meditation.xml	(date 1687243687954)
+@@ -1,17 +1,14 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".cate_meditation">
+-<ScrollView
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent">
+     <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:orientation="vertical">
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+@@ -22,13 +19,60 @@
+             android:textSize="28sp"/>
+         <ImageView
+             android:layout_width="match_parent"
+-            android:layout_height="wrap_content"
++            android:layout_height="300dp"
+             android:padding="10dp"
+             android:layout_margin="10sp"
+-            android:src="@drawable/img3"/>
++            android:src="@drawable/home_mede"/>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="vertical">
+ 
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:justificationMode="inter_word"
++                android:text="@string/introduction_to_meditation"
++                />
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:justificationMode="inter_word"
++                android:text="@string/origin_of_meditation"/>
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:justificationMode="inter_word"
++                android:text="@string/uses_and_advantages_of_meditation"/>
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:justificationMode="inter_word"
++                android:text="@string/names_in_the_list_medi"/>
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:justificationMode="inter_word"
++                android:text="@string/practioner_medi"/>
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:justificationMode="inter_word"
++                android:text="@string/names_of_practioner_medi"/>
+ 
+ 
++        </LinearLayout>
++
++
++
++
+     </LinearLayout>
+-</ScrollView>
+-</RelativeLayout>
+\ No newline at end of file
++
++</ScrollView>
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\n    id 'com.android.application'\n    id 'com.google.gms.google-services'\n}\n\nandroid {\n    namespace 'com.medical.medcoach'\n    compileSdk 33\n\n    defaultConfig {\n        applicationId \"com.medical.medcoach\"\n        minSdk 19\n        targetSdk 33\n        versionCode 1\n        versionName \"1.0\"\n        multiDexEnabled true\n\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\n    }\n\n    buildTypes {\n        release {\n            minifyEnabled false\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\n        }\n    }\n\n    buildFeatures {\n        viewBinding true\n    }\n    compileOptions {\n        sourceCompatibility JavaVersion.VERSION_1_8\n        targetCompatibility JavaVersion.VERSION_1_8\n    }\n}\n\ndependencies {\n\n    implementation 'androidx.appcompat:appcompat:1.6.1'\n    implementation 'com.google.android.material:material:1.9.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'\n    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'\n    implementation 'com.google.firebase:firebase-auth:22.0.0'\n    implementation 'com.google.android.gms:play-services-maps:18.1.0'\n    implementation 'com.google.firebase:firebase-storage:20.1.0'\n    implementation 'com.google.firebase:firebase-firestore:24.4.1'\n    implementation 'com.google.android.gms:play-services-auth:20.5.0'\n    testImplementation 'junit:junit:4.13.2'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.5'\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'\n    implementation 'com.android.support:multidex:1.0.3'\n\n    implementation \"com.airbnb.android:lottie:6.0.0\"\n\n    implementation platform('com.google.firebase:firebase-bom:32.0.0')\n    implementation 'com.google.firebase:firebase-analytics'\n    implementation 'com.google.firebase:firebase-database'\n\n    implementation 'com.facebook.android:facebook-android-sdk:latest.release'\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/build.gradle	(date 1687202912441)
+@@ -48,7 +48,7 @@
+     testImplementation 'junit:junit:4.13.2'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+-    implementation 'com.android.support:multidex:1.0.3'
++//    implementation 'com.android.support:multidex:1.0.3'
+ 
+     implementation "com.airbnb.android:lottie:6.0.0"
+ 
+Index: app/src/main/java/com/medical/medcoach/Fragment/LoginTabFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.medical.medcoach.Fragment;\n\nimport android.content.Intent;\nimport android.os.Bundle;\n\nimport androidx.annotation.NonNull;\nimport androidx.annotation.Nullable;\nimport androidx.fragment.app.Fragment;\n\nimport android.text.TextUtils;\nimport android.view.LayoutInflater;\nimport android.view.View;\nimport android.view.ViewGroup;\nimport android.widget.Button;\nimport android.widget.Toast;\n\nimport com.google.android.gms.auth.api.signin.GoogleSignIn;\nimport com.google.android.gms.auth.api.signin.GoogleSignInAccount;\nimport com.google.android.gms.auth.api.signin.GoogleSignInClient;\nimport com.google.android.gms.auth.api.signin.GoogleSignInOptions;\nimport com.google.android.gms.common.SignInButton;\nimport com.google.android.gms.common.api.ApiException;\nimport com.google.android.gms.tasks.OnCompleteListener;\nimport com.google.android.gms.tasks.Task;\nimport com.google.android.material.textfield.TextInputEditText;\nimport com.google.firebase.FirebaseException;\nimport com.google.firebase.auth.AuthCredential;\nimport com.google.firebase.auth.AuthResult;\nimport com.google.firebase.auth.FirebaseAuth;\nimport com.google.firebase.auth.FirebaseUser;\nimport com.google.firebase.auth.GoogleAuthProvider;\nimport com.google.firebase.auth.PhoneAuthCredential;\nimport com.google.firebase.auth.PhoneAuthProvider;\nimport com.google.firebase.database.DataSnapshot;\nimport com.google.firebase.database.DatabaseError;\nimport com.google.firebase.database.DatabaseReference;\nimport com.google.firebase.database.FirebaseDatabase;\nimport com.google.firebase.database.ValueEventListener;\nimport com.medical.medcoach.LoginRegisterActivity;\nimport com.medical.medcoach.MainActivity;\nimport com.medical.medcoach.R;\nimport com.medical.medcoach.getOTPActivity;\n\nimport java.util.Date;\nimport java.util.Objects;\nimport java.util.concurrent.TimeUnit;\n\n\npublic class LoginTabFragment extends Fragment {\n\n    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl(\"https://medcoach-b742f-default-rtdb.firebaseio.com/\");\n    TextInputEditText log_email, log_password;\n    Button login_btn;\n    FirebaseAuth mAuth;\n    GoogleSignInOptions googleSignInOptions;\n    GoogleSignInAccount googleSignInAccount;\n    GoogleSignInClient googleSignInClient;\n    SignInButton signInButton;\n    int counter=3;\n\n\n    @Override\n    public void onStart() {\n        // Check if user is signed in (non-null) and update UI accordingly.\n        super.onStart();\n        FirebaseUser currentUser = mAuth.getCurrentUser();\n        if (currentUser != null) {\n            Intent intent= new Intent(getActivity(),MainActivity.class);\n            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);\n            startActivity(intent);\n//            finish();\n        } else {\n            sign();\n        }\n    }\n\n    private void sign() {\n        Intent intent = googleSignInClient.getSignInIntent();\n        startActivityForResult(intent ,100);\n    }\n\n    @Override\n    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {\n        super.onActivityResult(requestCode, resultCode, data);\n        if (resultCode==100){\n            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);\n            try {\n                GoogleSignInAccount account = task.getResult(ApiException.class);\n                AuthCredential authCredential = GoogleAuthProvider.getCredential(account.getIdToken(),null);\n                mAuth.signInWithCredential(authCredential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {\n                    @Override\n                    public void onComplete(@NonNull Task<AuthResult> task) {\n                        if (task.isSuccessful()){\n                            Toast.makeText(getActivity(), \"login Successful\", Toast.LENGTH_SHORT).show();\n                            startActivity(new Intent(getActivity(),MainActivity.class));\n                        }\n                        else {\n                            Toast.makeText(getActivity(), \"Error\", Toast.LENGTH_SHORT).show();\n                        }\n                    }\n                });\n            } catch (ApiException e) {\n                e.printStackTrace();\n            }\n        }\n    }\n\n    @Override\n    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {\n        View view = inflater.inflate(R.layout.fragment_login_tab, container, false);\n\n        log_email=view.findViewById(R.id.Login_Email);\n        log_password=view.findViewById(R.id.Login_Password);\n\n        login_btn=view.findViewById(R.id.Login_Btn);\n\n        mAuth = FirebaseAuth.getInstance();\n\n        login_btn.setOnClickListener(new View.OnClickListener() {\n            @Override\n            public void onClick(View v) {\n                String email, password;\n                email = String.valueOf(log_email.getText());\n                password = String.valueOf(log_password.getText());\n\n                if(TextUtils.isEmpty(email) && TextUtils.isEmpty(password))\n                {\n                    Toast.makeText(getActivity(),\"Enter email & Password\",Toast.LENGTH_SHORT).show();\n                    counter--;\n                } else if (email.length()==10) {\n                    databaseReference=FirebaseDatabase.getInstance().getReference(\"Users\");\n                    databaseReference.child(\"+91\"+email).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {\n                        @Override\n                        public void onComplete(@NonNull Task<DataSnapshot> task) {\n                            if (task.isSuccessful()){\n                                if (task.getResult().exists()){\n                                    DataSnapshot dataSnapshot = task.getResult();\n                                    String Password = String.valueOf(dataSnapshot.child(\"Password\").getValue());\n                                    Toast.makeText(getActivity(), Password, Toast.LENGTH_SHORT).show();\n\n                                    PhoneAuthProvider.getInstance().verifyPhoneNumber(\n                                            \"+91\" + email,\n                                            60,\n                                            TimeUnit.SECONDS,\n                                            getActivity(),\n                                            new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {\n                                                @Override\n                                                public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {\n                                                    Toast.makeText(getActivity(), \"Error\", Toast.LENGTH_SHORT).show();\n                                                }\n\n                                                @Override\n                                                public void onVerificationFailed(@NonNull FirebaseException e) {\n                                                    Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();\n                                                }\n\n                                                @Override\n                                                public void onCodeSent(@NonNull String Sendotp, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {\n                                                    Intent intent = new Intent(getActivity(), getOTPActivity.class);\n                                                    intent.putExtra(\"phoneTxt\",email);\n                                                    intent.putExtra(\"backend\",Sendotp);\n                                                    startActivity(intent);\n                                                }\n                                            }\n                                    );\n\n                                }else {\n                                    Toast.makeText(getActivity(), \"User Not Exist\", Toast.LENGTH_SHORT).show();\n                                }\n                                \n                            }else {\n                                Toast.makeText(getActivity(), \"Failed\", Toast.LENGTH_SHORT).show();\n                            }\n\n                        }\n                    });\n\n                } else {\n\n                    mAuth.signInWithEmailAndPassword(email, password)\n                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {\n                                @Override\n                                public void onComplete(@NonNull Task<AuthResult> task) {\n                                    if (task.isSuccessful()) {\n                                        // Sign in success, update UI with the signed-in user's information\n                                        Toast.makeText(getActivity(), \"Login Successful.\",\n                                                Toast.LENGTH_SHORT).show();\n                                        Intent intent= new Intent(getActivity(),MainActivity.class);\n                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);\n                                        startActivity(intent);\n//                                        finish();\n\n                                    } else {\n                                        // If sign in fails, display a message to the user.\n                                        Toast.makeText(getActivity(), \"Login failed.\",Toast.LENGTH_SHORT).show();\n\n                                    }\n                                }\n                            });\n//                    Toast.makeText(Login.this,\"Invalid Credentials\",Toast.LENGTH_SHORT).show();\n//                    counter--;\n                }\n                if(counter==0){\n                    Toast.makeText(getActivity(),\"failed to login attempts\",Toast.LENGTH_SHORT).show();\n                    login_btn.setEnabled(false);\n                }\n\n            }\n\n        });\n\n\n        signInButton = view.findViewById(R.id.googleLoginBtn);\n        signInButton.setOnClickListener(new View.OnClickListener() {\n            @Override\n            public void onClick(View view) {\n                mAuth = FirebaseAuth.getInstance();\n                googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)\n                        .requestIdToken(getString(R.string.default_web_client_id))\n                        .requestEmail()\n                        .build();\n\n                googleSignInClient= GoogleSignIn.getClient(getActivity(),googleSignInOptions);\n            }\n        });\n\n\n\n        return view;\n\n    }\n\n    private boolean validateEmail(){\n        String email = Objects.requireNonNull(log_email.getText()).toString().trim();\n\n        if (email.isEmpty()){\n            log_email.setError(\"Field can't be Empty\");\n            return false;\n        }\n        else {\n            log_email.setError(null);\n            return true;\n        }\n    }\n\n    private boolean validatePassword(){\n        String password = Objects.requireNonNull(log_password.getText()).toString().trim();\n\n        if (password.isEmpty()){\n            log_password.setError(\"Field can't be Empty\");\n            return false;\n        }\n        else {\n            log_password.setError(null);\n            return true;\n        }\n    }\n\n    public  void confirmInput(View v){\n        if (!validateEmail() | !validatePassword()){\n            return;\n        }\n        String input = \"email: \" + log_email.getText().toString();\n        input +=\"\\n\";\n        input = \"Password: \" + log_password.getText().toString();\n\n        Toast.makeText(getActivity(), \"Please Enter\", Toast.LENGTH_SHORT).show();\n\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/medical/medcoach/Fragment/LoginTabFragment.java b/app/src/main/java/com/medical/medcoach/Fragment/LoginTabFragment.java
+--- a/app/src/main/java/com/medical/medcoach/Fragment/LoginTabFragment.java	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/java/com/medical/medcoach/Fragment/LoginTabFragment.java	(date 1687245769794)
+@@ -59,20 +59,20 @@
+     int counter=3;
+ 
+ 
+-    @Override
+-    public void onStart() {
+-        // Check if user is signed in (non-null) and update UI accordingly.
+-        super.onStart();
+-        FirebaseUser currentUser = mAuth.getCurrentUser();
+-        if (currentUser != null) {
+-            Intent intent= new Intent(getActivity(),MainActivity.class);
+-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+-            startActivity(intent);
+-//            finish();
+-        } else {
+-            sign();
+-        }
+-    }
++//    @Override
++//    public void onStart() {
++//        // Check if user is signed in (non-null) and update UI accordingly.
++//        super.onStart();
++//        FirebaseUser currentUser = mAuth.getCurrentUser();
++//        if (currentUser != null) {
++//            Intent intent= new Intent(getActivity(),MainActivity.class);
++//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
++//            startActivity(intent);
++////            finish();
++//        } else {
++//            sign();
++//        }
++//    }
+ 
+     private void sign() {
+         Intent intent = googleSignInClient.getSignInIntent();
+Index: app/src/main/java/com/medical/medcoach/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.medical.medcoach;\n\nimport static com.medical.medcoach.R.id.home;\n\nimport android.os.Bundle;\nimport android.view.MenuItem;\nimport android.view.View;\n\nimport androidx.annotation.NonNull;\nimport androidx.appcompat.app.AppCompatActivity;\nimport androidx.fragment.app.Fragment;\nimport androidx.viewpager2.widget.ViewPager2;\n\n\nimport com.google.android.material.bottomnavigation.BottomNavigationView;\nimport com.google.android.material.navigation.NavigationBarView;\nimport com.medical.medcoach.Adapter.AdapterViewPager;\nimport com.medical.medcoach.Fragment.BlogFragment;\nimport com.medical.medcoach.Fragment.CategoriesFragment;\nimport com.medical.medcoach.Fragment.HomeFragment;\nimport com.medical.medcoach.Fragment.ProfileFragment;\nimport com.medical.medcoach.databinding.ActivityMainBinding;\n\nimport java.util.ArrayList;\n\npublic class MainActivity extends AppCompatActivity {\n\n    ViewPager2 viewPager2;\n    ArrayList<Fragment> fragmentArrayList = new ArrayList<>();\n    BottomNavigationView bottomNavigationView;\n\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_main);\n\n        viewPager2 = findViewById(R.id.viewPager);\n\n        bottomNavigationView=findViewById(R.id.bottomNav);\n\n        fragmentArrayList.add(new HomeFragment());\n        fragmentArrayList.add(new CategoriesFragment());\n        fragmentArrayList.add(new BlogFragment());\n        fragmentArrayList.add(new ProfileFragment());\n\n        AdapterViewPager adapterViewPager =new AdapterViewPager(this,fragmentArrayList);\n        //set adapter\n        viewPager2.setAdapter(adapterViewPager);\n        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {\n            @Override\n            public void onPageSelected(int position) {\n                switch (position)\n                {\n                    case 0:\n                        bottomNavigationView.setSelectedItemId(R.id.home);\n                        break;\n                    case 1:\n                        bottomNavigationView.setSelectedItemId(R.id.cate);\n                        break;\n                    case 2:\n                        bottomNavigationView.setSelectedItemId(R.id.blog);\n                        break;\n                    case 3:\n                        bottomNavigationView.setSelectedItemId(R.id.profile);\n                        break;\n                }\n                super.onPageSelected(position);\n            }\n        });\n\n\n        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {\n            @Override\n            public boolean onNavigationItemSelected(@NonNull MenuItem item) {\n\n                int id = item.getItemId();\n                if (id==R.id.home) {\n                    viewPager2.setCurrentItem(0);\n                }\n                else if (id==R.id.cate) {\n                    viewPager2.setCurrentItem(1);\n                }\n                else if (id==R.id.blog) {\n                    viewPager2.setCurrentItem(2);\n                }\n                else if (id==R.id.profile)\n                    viewPager2.setCurrentItem(3);\n\n                return true;\n            }\n        });\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/medical/medcoach/MainActivity.java b/app/src/main/java/com/medical/medcoach/MainActivity.java
+--- a/app/src/main/java/com/medical/medcoach/MainActivity.java	(revision 35a3020dd09bdd1bf6742239454f78a1b101fa93)
++++ b/app/src/main/java/com/medical/medcoach/MainActivity.java	(date 1687194732817)
+@@ -40,7 +40,7 @@
+         bottomNavigationView=findViewById(R.id.bottomNav);
+ 
+         fragmentArrayList.add(new HomeFragment());
+-        fragmentArrayList.add(new CategoriesFragment());
++//        fragmentArrayList.add(new CategoriesFragment());
+         fragmentArrayList.add(new BlogFragment());
+         fragmentArrayList.add(new ProfileFragment());
+ 
+@@ -55,13 +55,13 @@
+                     case 0:
+                         bottomNavigationView.setSelectedItemId(R.id.home);
+                         break;
++//                    case 1:
++//                        bottomNavigationView.setSelectedItemId(R.id.cate);
++//                        break;
+                     case 1:
+-                        bottomNavigationView.setSelectedItemId(R.id.cate);
+-                        break;
+-                    case 2:
+                         bottomNavigationView.setSelectedItemId(R.id.blog);
+                         break;
+-                    case 3:
++                    case 2:
+                         bottomNavigationView.setSelectedItemId(R.id.profile);
+                         break;
+                 }
+@@ -78,14 +78,14 @@
+                 if (id==R.id.home) {
+                     viewPager2.setCurrentItem(0);
+                 }
+-                else if (id==R.id.cate) {
++//                else if (id==R.id.cate) {
++//                    viewPager2.setCurrentItem(1);
++//                }
++                else if (id==R.id.blog) {
+                     viewPager2.setCurrentItem(1);
+                 }
+-                else if (id==R.id.blog) {
++                else if (id==R.id.profile)
+                     viewPager2.setCurrentItem(2);
+-                }
+-                else if (id==R.id.profile)
+-                    viewPager2.setCurrentItem(3);
+ 
+                 return true;
+             }

@@ -1,0 +1,34 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\n    <string name=\"app_name\">MedCoach</string>\n    <!-- TODO: Remove or change this placeholder text -->\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\n    <string name=\"password\">Password</string>\n    <string name=\"email_id_mob_no\">Email ID/Mob No</string>\n    <string name=\"email_id\">Email ID</string>\n    <string name=\"phone_no\">Phone No </string>\n    <string name=\"full_name\">Full Name</string>\n    <string name=\"confirm_password\">Confirm Password</string>\n    <string name=\"reset\">reset</string>\n    <string name=\"register\">Register</string>\n    <string name=\"please_enter_the_otp_sent_to_you\">Please Enter the OTP sent to you</string>\n    <string name=\"otp_verfication\">OTP Verfication</string>\n    <string name=\"resend_otp\">RESEND</string>\n    <string name=\"didn_t_receive_the_otp\">Didn\\'t receive the OTP</string>\n    <string name=\"submit\">Submit</string>\n    <string name=\"Yoga\">7 Types of Mediation</string>\n    <string name=\"create_profile\">Create Profile</string>\n    <string name=\"meditation\">Meditation</string>\n    <string name=\"Medi\">\n        <b>Meditation</b>\n        Introduction of Meditation:\n        Meditation is a practice that involves focusing one's mind and cultivating a state of calmness, clarity, and emotional balance. It is often used as a technique to achieve mental relaxation, self-awareness, and spiritual growth. Meditation involves various techniques such as mindfulness, concentration, visualization, or contemplation. It is practiced in numerous cultures and religions worldwide and has gained popularity due to its potential benefits for mental, emotional, and physical well-being.\n       \\n\n        <br><b>Origin of Meditation</b>></br>\n        <br>The origins of meditation can be traced back thousands of years across different cultures and traditions. Various forms of meditation have been practiced in ancient civilizations including India, China, Egypt, Greece, and Japan. However, one of the earliest recorded instances of meditation comes from ancient India, particularly in the yogic traditions of Hinduism and later in Buddhism. Meditation techniques were developed and refined as a means to achieve self-realization, enlightenment, and spiritual awakening.\n</br>\\n\n        <br><b>Uses and Advantages of Meditation:\n</b>></br>\n          <br>Meditation offers a wide range of uses and advantages for individuals who practice it regularly. Some of the key benefits include:\nStress reduction: Meditation is known to calm the mind and relax the body, helping to reduce stress and anxiety. It promotes a sense of inner peace and overall well-being.\n</br>\n\n    </string>\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision d8a2f65d28ae315c58b8993b2247beb2ec724272)
++++ b/app/src/main/res/values/strings.xml	(date 1687161210305)
+@@ -18,19 +18,9 @@
+     <string name="Yoga">7 Types of Mediation</string>
+     <string name="create_profile">Create Profile</string>
+     <string name="meditation">Meditation</string>
+-    <string name="Medi">
+-        <b>Meditation</b>
+-        Introduction of Meditation:
+-        Meditation is a practice that involves focusing one's mind and cultivating a state of calmness, clarity, and emotional balance. It is often used as a technique to achieve mental relaxation, self-awareness, and spiritual growth. Meditation involves various techniques such as mindfulness, concentration, visualization, or contemplation. It is practiced in numerous cultures and religions worldwide and has gained popularity due to its potential benefits for mental, emotional, and physical well-being.
+-       \n
+-        <br><b>Origin of Meditation</b>></br>
+-        <br>The origins of meditation can be traced back thousands of years across different cultures and traditions. Various forms of meditation have been practiced in ancient civilizations including India, China, Egypt, Greece, and Japan. However, one of the earliest recorded instances of meditation comes from ancient India, particularly in the yogic traditions of Hinduism and later in Buddhism. Meditation techniques were developed and refined as a means to achieve self-realization, enlightenment, and spiritual awakening.
+-</br>\n
+-        <br><b>Uses and Advantages of Meditation:
+-</b>></br>
+-          <br>Meditation offers a wide range of uses and advantages for individuals who practice it regularly. Some of the key benefits include:
+-Stress reduction: Meditation is known to calm the mind and relax the body, helping to reduce stress and anxiety. It promotes a sense of inner peace and overall well-being.
+-</br>
++    <string name="Medi">   <b>Meditation</b>
++        <br></br>
++
+ 
+     </string>
+ </resources>
+\ No newline at end of file
