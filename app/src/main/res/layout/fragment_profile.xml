@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.ProfileFragment">
-
-    <!-- TODO: Update blank fragment layout -->
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -38,8 +36,8 @@
             android:textStyle="bold"
             android:layout_marginStart="64dp"
             android:layout_marginTop="20dp"
-            android:textSize="24dp"/>
-        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="24sp"/>
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
@@ -49,19 +47,18 @@
     </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
         android:layout_marginTop="150dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
+        <Button
+            android:id="@+id/logout"
             android:backgroundTint="#FF8F05"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Log Out"
-            android:onClick="logout"/>
-
+/>
     </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>
